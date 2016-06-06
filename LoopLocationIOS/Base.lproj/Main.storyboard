@@ -7,6 +7,73 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="jNl-sM-Syg">
+            <objects>
+                <viewController id="aTI-nX-p4N" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="33K-48-NkE"/>
+                        <viewControllerLayoutGuide type="bottom" id="5hF-BB-nnR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wdL-hY-eGH">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWM-nD-mRg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="See locations"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="154" width="136" height="38"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="mjo-dg-VLS" kind="show" id="Fma-8m-7aT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-LX-c9i">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Tracking"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="377" width="90" height="46"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="3K3-wa-cwe" kind="show" id="Ylj-H9-xuf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgz-bC-fAg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Log"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="161" y="597" width="78" height="41"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="iry-8K-s2o" kind="show" id="2bp-9m-MXh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pWM-nD-mRg"/>
+                                <exclude reference="Xsf-LX-c9i"/>
+                                <exclude reference="Sgz-bC-fAg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pWM-nD-mRg"/>
+                                <include reference="Xsf-LX-c9i"/>
+                                <include reference="Sgz-bC-fAg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="BgU-1X-3TF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBf-Lf-ihd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.5" y="296.25"/>
+        </scene>
         <!--Loop Location Sample app-->
         <scene sceneID="OSU-LT-ZhH">
             <objects>
@@ -116,12 +183,180 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="mjo-dg-VLS" kind="relationship" relationship="rootViewController" id="lTk-wL-JDu"/>
+                        <segue destination="aTI-nX-p4N" kind="relationship" relationship="rootViewController" id="UvS-me-gGG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1I-63-EWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="87" y="296.25"/>
+            <point key="canvasLocation" x="-565.5" y="296.25"/>
+        </scene>
+        <!--Track View Controller-->
+        <scene sceneID="FTY-vt-1Yx">
+            <objects>
+                <viewController id="3K3-wa-cwe" customClass="TrackViewController" customModule="Loop_Sample_Dwell_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oXb-dE-SXK"/>
+                        <viewControllerLayoutGuide type="bottom" id="VMn-01-SPZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SmC-RI-wHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Credential" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C9r-aB-oH2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="133" width="240" height="128"/>
+                                </variation>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BG2-Zd-WI6">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="176" y="447" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="trackToggled:" destination="3K3-wa-cwe" eventType="valueChanged" id="GI2-pJ-njq"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Tracking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csI-x1-Sxe">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="494" width="136" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acz-7c-cii">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sync"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="169" y="598" width="63" height="33"/>
+                                </variation>
+                                <connections>
+                                    <action selector="syncClicked:" destination="3K3-wa-cwe" eventType="touchUpInside" id="vf2-sC-Al1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="C9r-aB-oH2"/>
+                                <exclude reference="BG2-Zd-WI6"/>
+                                <exclude reference="csI-x1-Sxe"/>
+                                <exclude reference="Acz-7c-cii"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="C9r-aB-oH2"/>
+                                <include reference="BG2-Zd-WI6"/>
+                                <include reference="csI-x1-Sxe"/>
+                                <include reference="Acz-7c-cii"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="credentialView" destination="C9r-aB-oH2" id="pHD-l7-dce"/>
+                        <outlet property="trackSwitch" destination="BG2-Zd-WI6" id="gw8-ye-JzI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWe-h8-KOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.5" y="1033.5"/>
+        </scene>
+        <!--Log View Controller-->
+        <scene sceneID="qjr-ny-h10">
+            <objects>
+                <viewController id="iry-8K-s2o" customClass="logViewController" customModule="Loop_Sample_Dwell_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cZ8-4a-AV5"/>
+                        <viewControllerLayoutGuide type="bottom" id="ne6-aj-fRl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e9y-mQ-ST4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lZP-1w-08x">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTY-le-HK1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Copy to clipboard"/>
+                                <connections>
+                                    <action selector="copyClicked:" destination="iry-8K-s2o" eventType="touchUpInside" id="nLL-EX-ghb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYr-ZM-uIu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearClicked:" destination="iry-8K-s2o" eventType="touchUpInside" id="6h3-dj-V2l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gTY-le-HK1" firstAttribute="leading" secondItem="e9y-mQ-ST4" secondAttribute="leadingMargin" id="0sI-1s-nW6"/>
+                            <constraint firstItem="ne6-aj-fRl" firstAttribute="top" secondItem="lZP-1w-08x" secondAttribute="bottom" id="5GG-U5-bx3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NYr-ZM-uIu" secondAttribute="trailing" id="E9o-Q6-Ubx"/>
+                            <constraint firstItem="lZP-1w-08x" firstAttribute="top" secondItem="cZ8-4a-AV5" secondAttribute="bottom" id="FSw-3n-0Hx"/>
+                            <constraint firstItem="lZP-1w-08x" firstAttribute="leading" secondItem="e9y-mQ-ST4" secondAttribute="leadingMargin" id="SC9-W5-MtK"/>
+                            <constraint firstItem="ne6-aj-fRl" firstAttribute="top" secondItem="gTY-le-HK1" secondAttribute="bottom" constant="20" id="VWD-Xa-WYO"/>
+                            <constraint firstItem="ne6-aj-fRl" firstAttribute="top" secondItem="NYr-ZM-uIu" secondAttribute="bottom" constant="20" id="ZZp-49-ctm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lZP-1w-08x" secondAttribute="trailing" id="v5k-WS-jsj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lZP-1w-08x"/>
+                                <exclude reference="gTY-le-HK1"/>
+                                <exclude reference="NYr-ZM-uIu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="v5k-WS-jsj"/>
+                                <exclude reference="SC9-W5-MtK"/>
+                                <exclude reference="FSw-3n-0Hx"/>
+                                <exclude reference="0sI-1s-nW6"/>
+                                <exclude reference="VWD-Xa-WYO"/>
+                                <exclude reference="ZZp-49-ctm"/>
+                                <exclude reference="5GG-U5-bx3"/>
+                                <exclude reference="E9o-Q6-Ubx"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lZP-1w-08x"/>
+                                <include reference="gTY-le-HK1"/>
+                                <include reference="NYr-ZM-uIu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="v5k-WS-jsj"/>
+                                <include reference="SC9-W5-MtK"/>
+                                <include reference="FSw-3n-0Hx"/>
+                                <include reference="0sI-1s-nW6"/>
+                                <include reference="VWD-Xa-WYO"/>
+                                <include reference="ZZp-49-ctm"/>
+                                <include reference="5GG-U5-bx3"/>
+                                <include reference="E9o-Q6-Ubx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="logView" destination="lZP-1w-08x" id="zN3-xP-Bae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kaa-gO-NiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919.5" y="1038"/>
         </scene>
     </scenes>
 </document>

@@ -10,12 +10,28 @@ import UIKit
 import LoopSDK
 
 class LocationTableController: UITableViewController {
-	var tableData:[(text: String, shouldShowMap: Bool, data:LoopLocation?)] = [
-		(text:"Get locations", shouldShowMap:false, data:nil)
-	];
+	var tableData:[(text: String, shouldShowMap: Bool, data:LoopLocation?)] = [];
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		LoopSDK.syncManager.getProfileLocations {
+			(loopLocations:[LoopLocation]) in
+			
+			self.tableData.removeAll();
+			//self.tableData.append((text: "Get locations", shouldShowMap:false, data:nil))
+			
+			if loopLocations.isEmpty {
+				self.tableData.append((text: "No location!", shouldShowMap:false, data: nil));
+			} else {
+				loopLocations.forEach { loc in
+					let text = loc.labels.reduce("") { "\($0) (\($1.name):\(String(format: "%.2f", $1.score)))"}
+					self.tableData.append((text: "\(text)", shouldShowMap:true, data:loc));
+				}
+			}
+			
+			self.tableView.reloadData();
+		}
 	}
 	
 	override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -49,30 +65,9 @@ class LocationTableController: UITableViewController {
 			if (tableData[row].text == "Get locations") {
 				if !getLoopInitialized() {
 					self.tableData.removeAll();
-					self.tableData.append((text: "Get locations", shouldShowMap:false, data:nil))
 					self.tableData.append((text: "SDK credential error!", shouldShowMap:false, data:nil))
 					self.tableView.reloadData();
 					return;
-				}
-				
-				LoopSDK.syncManager.getProfileLocations {
-					(loopLocations:[LoopLocation]) in
-					print(loopLocations);
-					
-					self.tableData.removeAll();
-					self.tableData.append((text: "Get locations", shouldShowMap:false, data:nil))
-					
-					if loopLocations.isEmpty {
-						self.tableData.append((text: "No location!", shouldShowMap:false, data: nil));
-					} else {
-						loopLocations.forEach { loc in
-							if (!loc.labels.isEmpty) {
-								self.tableData.append((text: "name:\(loc.labels[0].name) score:\(loc.labels[0].score)", shouldShowMap:true, data:loc));
-							}
-						}
-					}
-					
-					self.tableView.reloadData();
 				}
 			}
 		}

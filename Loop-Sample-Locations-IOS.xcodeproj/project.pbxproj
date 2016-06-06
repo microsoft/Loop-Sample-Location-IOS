@@ -11,12 +11,14 @@
 		B58887181CF3A6AD00B25BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58887161CF3A6AD00B25BCD /* Main.storyboard */; };
 		B588871A1CF3A6AD00B25BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58887191CF3A6AD00B25BCD /* Assets.xcassets */; };
 		B588871D1CF3A6AD00B25BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B588871B1CF3A6AD00B25BCD /* LaunchScreen.storyboard */; };
-		B5A29D991D00A8AB00939908 /* LoopSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A29D971D00A8AB00939908 /* LoopSDK.framework */; };
-		B5A29D9A1D00A8AB00939908 /* LoopSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A29D971D00A8AB00939908 /* LoopSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5A29D9B1D00A8AB00939908 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A29D981D00A8AB00939908 /* Alamofire.framework */; };
-		B5A29D9C1D00A8AB00939908 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5A29D981D00A8AB00939908 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5CEBD511CFCFAF500EC3F20 /* LocationTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CEBD501CFCFAF500EC3F20 /* LocationTableController.swift */; };
 		B5CEBD531CFD051A00EC3F20 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CEBD521CFD051A00EC3F20 /* MapViewController.swift */; };
+		B5CEFDD21D05FE1600E0B799 /* logViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CEFDD11D05FE1600E0B799 /* logViewController.swift */; };
+		B5CEFDD41D05FE2E00E0B799 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CEFDD31D05FE2E00E0B799 /* TrackViewController.swift */; };
+		B5CEFDD71D06005700E0B799 /* LoopSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD51D06005700E0B799 /* LoopSDK.framework */; };
+		B5CEFDD81D06005700E0B799 /* LoopSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD51D06005700E0B799 /* LoopSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5CEFDD91D06005700E0B799 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD61D06005700E0B799 /* Alamofire.framework */; };
+		B5CEFDDA1D06005700E0B799 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD61D06005700E0B799 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +28,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B5A29D9A1D00A8AB00939908 /* LoopSDK.framework in Embed Frameworks */,
-				B5A29D9C1D00A8AB00939908 /* Alamofire.framework in Embed Frameworks */,
+				B5CEFDD81D06005700E0B799 /* LoopSDK.framework in Embed Frameworks */,
+				B5CEFDDA1D06005700E0B799 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,10 +43,12 @@
 		B58887191CF3A6AD00B25BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B588871C1CF3A6AD00B25BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B588871E1CF3A6AD00B25BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5A29D971D00A8AB00939908 /* LoopSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopSDK.framework; path = Carthage/Build/iOS/LoopSDK.framework; sourceTree = "<group>"; };
-		B5A29D981D00A8AB00939908 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B5CEBD501CFCFAF500EC3F20 /* LocationTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableController.swift; sourceTree = "<group>"; };
 		B5CEBD521CFD051A00EC3F20 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B5CEFDD11D05FE1600E0B799 /* logViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logViewController.swift; sourceTree = "<group>"; };
+		B5CEFDD31D05FE2E00E0B799 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		B5CEFDD51D06005700E0B799 /* LoopSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopSDK.framework; path = Carthage/Build/iOS/LoopSDK.framework; sourceTree = "<group>"; };
+		B5CEFDD61D06005700E0B799 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A29D991D00A8AB00939908 /* LoopSDK.framework in Frameworks */,
-				B5A29D9B1D00A8AB00939908 /* Alamofire.framework in Frameworks */,
+				B5CEFDD71D06005700E0B799 /* LoopSDK.framework in Frameworks */,
+				B5CEFDD91D06005700E0B799 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +67,8 @@
 		B58887061CF3A6AD00B25BCD = {
 			isa = PBXGroup;
 			children = (
-				B5A29D971D00A8AB00939908 /* LoopSDK.framework */,
-				B5A29D981D00A8AB00939908 /* Alamofire.framework */,
+				B5CEFDD51D06005700E0B799 /* LoopSDK.framework */,
+				B5CEFDD61D06005700E0B799 /* Alamofire.framework */,
 				B58887111CF3A6AD00B25BCD /* LoopLocationIOS */,
 				B58887101CF3A6AD00B25BCD /* Products */,
 			);
@@ -84,6 +88,8 @@
 				B58887121CF3A6AD00B25BCD /* AppDelegate.swift */,
 				B5CEBD501CFCFAF500EC3F20 /* LocationTableController.swift */,
 				B5CEBD521CFD051A00EC3F20 /* MapViewController.swift */,
+				B5CEFDD31D05FE2E00E0B799 /* TrackViewController.swift */,
+				B5CEFDD11D05FE1600E0B799 /* logViewController.swift */,
 				B58887161CF3A6AD00B25BCD /* Main.storyboard */,
 				B58887191CF3A6AD00B25BCD /* Assets.xcassets */,
 				B588871B1CF3A6AD00B25BCD /* LaunchScreen.storyboard */,
@@ -127,7 +133,7 @@
 						CreatedOnToolsVersion = 7.3;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -172,6 +178,8 @@
 				B58887131CF3A6AD00B25BCD /* AppDelegate.swift in Sources */,
 				B5CEBD511CFCFAF500EC3F20 /* LocationTableController.swift in Sources */,
 				B5CEBD531CFD051A00EC3F20 /* MapViewController.swift in Sources */,
+				B5CEFDD21D05FE1600E0B799 /* logViewController.swift in Sources */,
+				B5CEFDD41D05FE2E00E0B799 /* TrackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/LoopLocationIOS/Info.plist";
@@ -301,6 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/LoopLocationIOS/Info.plist";
