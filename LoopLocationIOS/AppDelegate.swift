@@ -14,8 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener {
 
 	var window: UIWindow?
 	
-	let appID = "YOUR_APP_ID";
-	let appToken = "YOUR_APP_TOKEN";
+	//let appID = "YOUR_APP_ID";
+	//let appToken = "YOUR_APP_TOKEN";
+	let appID = "google-dev-e5ae23a9";
+	let appToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6Imdvb2dsZS1kZXYtZTVhZTIzYTkiLCJhcHBLZXkiOiJiYmNiZmZkMDg3OTYtNGQ2MS1hZjc4LTNkNjczMjZhYzUwMSIsImFsbG93ZWRSb3V0ZXMiOlt7Im1ldGhvZCI6InBvc3QiLCJwYXRoIjoiL3YyLjAvYXBwL2dvb2dsZS1kZXYtZTVhZTIzYTkvdXNlciJ9LHsibWV0aG9kIjoiZGVsZXRlIiwicGF0aCI6Ii92Mi4wL2FwcC9nb29nbGUtZGV2LWU1YWUyM2E5L3VzZXIifSx7Im1ldGhvZCI6InBvc3QiLCJwYXRoIjoiL3YyLjAvYXBwL2dvb2dsZS1kZXYtZTVhZTIzYTkvbG9naW4ifSx7Im1ldGhvZCI6ImdldCIsInBhdGgiOiIvdjIuMC9hcHAvZ29vZ2xlLWRldi1lNWFlMjNhOS91c2VyIn0seyJtZXRob2QiOiJnZXQiLCJwYXRoIjoiL3YyLjAvYXBwL2dvb2dsZS1kZXYtZTVhZTIzYTkvdXNlci9bd2QtXSoifV0sImlhdCI6MTQ2NDg5MTM0NSwiaXNzIjoiTG9vcCBBdXRoIHYyIiwic3ViIjoiZ29vZ2xlLWRldi1lNWFlMjNhOSJ9.-8pSXVEm_ljDXLkjyI-YuK-B5OdRgkitSX1-BFP8qfg";
 	
 	var loopInitialized = false;
 	
@@ -23,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener {
 		// Override point for customization after application launch.
 		
 		LoopSDK.initialize(self, appID: appID, token: appToken);
-
+		
 		return true
 	}
 
