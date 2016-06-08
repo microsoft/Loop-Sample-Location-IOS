@@ -25,7 +25,8 @@ class LocationTableController: UITableViewController {
 				self.tableData.append((text: "No location!", shouldShowMap:false, data: nil));
 			} else {
 				loopLocations.forEach { loc in
-					let text = loc.labels.reduce("") { "\($0) (\($1.name):\(String(format: "%.2f", $1.score)))"}
+					var text = loc.labels.reduce("") { "\($0) (\($1.name):\(String(format: "%.2f", $1.score)))"}
+					text = text == "" ? "No label": text;
 					self.tableData.append((text: "\(text)", shouldShowMap:true, data:loc));
 				}
 			}

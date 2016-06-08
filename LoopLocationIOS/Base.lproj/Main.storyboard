@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="v8S-AO-6vX">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -16,6 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5hF-BB-nnR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wdL-hY-eGH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWM-nD-mRg">
@@ -77,7 +77,7 @@
         <!--Loop Location Sample app-->
         <scene sceneID="OSU-LT-ZhH">
             <objects>
-                <tableViewController title="Loop Location Sample app" modalPresentationStyle="currentContext" id="mjo-dg-VLS" customClass="LocationTableController" customModule="Loop_Sample_Dwell_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Loop Location Sample app" modalPresentationStyle="currentContext" id="mjo-dg-VLS" customClass="LocationTableController" customModule="Loop_Location" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cgF-xK-2Uq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
         <!--Map View Controller-->
         <scene sceneID="reX-Ym-vxP">
             <objects>
-                <viewController storyboardIdentifier="MapViewController" id="Qep-Yx-TzS" customClass="MapViewController" customModule="Loop_Sample_Dwell_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="Qep-Yx-TzS" customClass="MapViewController" customModule="Loop_Location" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="orG-w6-nsn"/>
                         <viewControllerLayoutGuide type="bottom" id="9Ft-nr-egI"/>
@@ -193,7 +193,7 @@
         <!--Track View Controller-->
         <scene sceneID="FTY-vt-1Yx">
             <objects>
-                <viewController id="3K3-wa-cwe" customClass="TrackViewController" customModule="Loop_Sample_Dwell_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3K3-wa-cwe" customClass="TrackViewController" customModule="Loop_Location" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oXb-dE-SXK"/>
                         <viewControllerLayoutGuide type="bottom" id="VMn-01-SPZ"/>
@@ -271,7 +271,7 @@
         <!--Log View Controller-->
         <scene sceneID="qjr-ny-h10">
             <objects>
-                <viewController id="iry-8K-s2o" customClass="logViewController" customModule="Loop_Sample_Dwell_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iry-8K-s2o" customClass="logViewController" customModule="Loop_Location" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cZ8-4a-AV5"/>
                         <viewControllerLayoutGuide type="bottom" id="ne6-aj-fRl"/>
@@ -283,7 +283,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZP-1w-08x">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -322,14 +322,14 @@
                                 <exclude reference="NYr-ZM-uIu"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="v5k-WS-jsj"/>
-                                <exclude reference="SC9-W5-MtK"/>
-                                <exclude reference="FSw-3n-0Hx"/>
-                                <exclude reference="0sI-1s-nW6"/>
+                                <exclude reference="5GG-U5-bx3"/>
                                 <exclude reference="VWD-Xa-WYO"/>
                                 <exclude reference="ZZp-49-ctm"/>
-                                <exclude reference="5GG-U5-bx3"/>
                                 <exclude reference="E9o-Q6-Ubx"/>
+                                <exclude reference="0sI-1s-nW6"/>
+                                <exclude reference="FSw-3n-0Hx"/>
+                                <exclude reference="SC9-W5-MtK"/>
+                                <exclude reference="v5k-WS-jsj"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -339,14 +339,14 @@
                                 <include reference="NYr-ZM-uIu"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="v5k-WS-jsj"/>
-                                <include reference="SC9-W5-MtK"/>
-                                <include reference="FSw-3n-0Hx"/>
-                                <include reference="0sI-1s-nW6"/>
+                                <include reference="5GG-U5-bx3"/>
                                 <include reference="VWD-Xa-WYO"/>
                                 <include reference="ZZp-49-ctm"/>
-                                <include reference="5GG-U5-bx3"/>
                                 <include reference="E9o-Q6-Ubx"/>
+                                <include reference="0sI-1s-nW6"/>
+                                <include reference="FSw-3n-0Hx"/>
+                                <include reference="SC9-W5-MtK"/>
+                                <include reference="v5k-WS-jsj"/>
                             </mask>
                         </variation>
                     </view>

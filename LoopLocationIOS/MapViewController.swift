@@ -25,7 +25,8 @@ class MapViewController: UIViewController {
 		super.viewDidLoad()
 		
 		if locationData != nil {
-			distLabel.text = "Name: \(locationData!.labels[0].name)   Score: \(locationData!.labels[0].score)";
+			let text = locationData!.labels.reduce("") { "\($0) (\($1.name):\(String(format: "%.2f", $1.score)))"};
+			distLabel.text = text == "" ? "No label": text;
 			mapView.showAnnotations([createAnnotationFromLocation(locationData!)], animated: false)
 		}
 	}
