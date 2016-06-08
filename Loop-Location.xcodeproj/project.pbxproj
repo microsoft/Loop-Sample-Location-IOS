@@ -37,7 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B588870F1CF3A6AD00B25BCD /* Loop-Sample-Dwell-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loop-Sample-Dwell-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B588870F1CF3A6AD00B25BCD /* Loop Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loop Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58887121CF3A6AD00B25BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58887171CF3A6AD00B25BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B58887191CF3A6AD00B25BCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		B58887101CF3A6AD00B25BCD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B588870F1CF3A6AD00B25BCD /* Loop-Sample-Dwell-IOS.app */,
+				B588870F1CF3A6AD00B25BCD /* Loop Location.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B588870E1CF3A6AD00B25BCD /* Loop-Sample-Dwell-IOS */ = {
+		B588870E1CF3A6AD00B25BCD /* Loop-Location */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B58887211CF3A6AD00B25BCD /* Build configuration list for PBXNativeTarget "Loop-Sample-Dwell-IOS" */;
+			buildConfigurationList = B58887211CF3A6AD00B25BCD /* Build configuration list for PBXNativeTarget "Loop-Location" */;
 			buildPhases = (
 				B588870B1CF3A6AD00B25BCD /* Sources */,
 				B588870C1CF3A6AD00B25BCD /* Frameworks */,
@@ -114,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = "Loop-Sample-Dwell-IOS";
+			name = "Loop-Location";
 			productName = SimpleTest;
-			productReference = B588870F1CF3A6AD00B25BCD /* Loop-Sample-Dwell-IOS.app */;
+			productReference = B588870F1CF3A6AD00B25BCD /* Loop Location.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +139,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B588870A1CF3A6AD00B25BCD /* Build configuration list for PBXProject "Loop-Sample-Locations-IOS" */;
+			buildConfigurationList = B588870A1CF3A6AD00B25BCD /* Build configuration list for PBXProject "Loop-Location" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -152,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B588870E1CF3A6AD00B25BCD /* Loop-Sample-Dwell-IOS */,
+				B588870E1CF3A6AD00B25BCD /* Loop-Location */,
 			);
 		};
 /* End PBXProject section */
@@ -300,7 +300,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/LoopLocationIOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Microsoft.LoopLocation.iOS;
-				PRODUCT_NAME = "Loop-Sample-Dwell-IOS";
+				PRODUCT_NAME = "Loop Location";
 			};
 			name = Debug;
 		};
@@ -316,14 +316,14 @@
 				INFOPLIST_FILE = "$(SRCROOT)/LoopLocationIOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Microsoft.LoopLocation.iOS;
-				PRODUCT_NAME = "Loop-Sample-Dwell-IOS";
+				PRODUCT_NAME = "Loop Location";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B588870A1CF3A6AD00B25BCD /* Build configuration list for PBXProject "Loop-Sample-Locations-IOS" */ = {
+		B588870A1CF3A6AD00B25BCD /* Build configuration list for PBXProject "Loop-Location" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B588871F1CF3A6AD00B25BCD /* Debug */,
@@ -332,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B58887211CF3A6AD00B25BCD /* Build configuration list for PBXNativeTarget "Loop-Sample-Dwell-IOS" */ = {
+		B58887211CF3A6AD00B25BCD /* Build configuration list for PBXNativeTarget "Loop-Location" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B58887221CF3A6AD00B25BCD /* Debug */,
