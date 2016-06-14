@@ -4,6 +4,7 @@
 * You will need the latest version of XCode (7.3.1) to run this sample app.
 * You will need to install [Carthage](https://github.com/Carthage/Carthage)
 
+## Build instructions:
 These instructions will get you a copy of a Loop Location sample app for viewing locations computed by the Loop platform.
 
 0. If you haven’t already, signup for a Loop account at the [Loop Developer Site](http://www.loop.ms)
