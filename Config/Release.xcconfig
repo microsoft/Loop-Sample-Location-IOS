@@ -1,0 +1,24 @@
+//
+//  Release.xcconfig
+//  Loop Location
+//
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+
+VALIDATE_PRODUCT = YES
+
+ENABLE_NS_ASSERTIONS = NO
+
+MTL_ENABLE_DEBUG_INFO = NO
+
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+
+INFOPLIST_FILE = LoopLocationIOS/Info.plist
+
+PRODUCT_BUNDLE_IDENTIFIER = ms.loop.Loop-Location
+
+PRODUCT_NAME = Loop Location
+
+FRAMEWORK_SEARCH_PATHS = $(inherited) $(PROJECT_DIR)/Carthage/Build/iOS
+
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
