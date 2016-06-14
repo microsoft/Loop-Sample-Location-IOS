@@ -11,7 +11,6 @@ These instructions will get you a copy of a Loop Location sample app for viewing
 0. Create an app to get your Loop app id and app token
 0. Clone this sample app `git clone https://github.com/Microsoft/Loop-Sample-Location-IOS.git`), and open it in XCode.
 0. Make a copy of `Config/Keys.example.xcconfig` and call it `Config/Keys.xcconfig`
-0. Replace the `YOUR_APP_ID` and `YOUR_APP_TOKEN` constant in `AppDelegate.swift` with your loop app key and secret token. 
 0. In the keys config file provide values for the `LOOP_APP_ID_PROP` and `LOOP_APP_TOKEN_PROP` using your loop app id and app token from the dashboard.
 0. From the command line in the project directory run `carthage update --platform iOS`
 0. Run the app. 
