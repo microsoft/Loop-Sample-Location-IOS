@@ -19,6 +19,11 @@
 		B5CEFDD81D06005700E0B799 /* LoopSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD51D06005700E0B799 /* LoopSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5CEFDD91D06005700E0B799 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD61D06005700E0B799 /* Alamofire.framework */; };
 		B5CEFDDA1D06005700E0B799 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD61D06005700E0B799 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F6E0F6561D0FD52F005A13E5 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */; };
+		F6E0F6571D0FD52F005A13E5 /* Keys.example.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */; };
+		F6E0F6581D0FD52F005A13E5 /* Keys.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6531D0FD52F005A13E5 /* Keys.xcconfig */; };
+		F6E0F6591D0FD52F005A13E5 /* Loop Location.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */; };
+		F6E0F65A1D0FD52F005A13E5 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +54,11 @@
 		B5CEFDD31D05FE2E00E0B799 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		B5CEFDD51D06005700E0B799 /* LoopSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopSDK.framework; path = Carthage/Build/iOS/LoopSDK.framework; sourceTree = "<group>"; };
 		B5CEFDD61D06005700E0B799 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Keys.example.xcconfig; sourceTree = "<group>"; };
+		F6E0F6531D0FD52F005A13E5 /* Keys.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Loop Location.xcconfig"; sourceTree = "<group>"; };
+		F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,7 @@
 		B58887061CF3A6AD00B25BCD = {
 			isa = PBXGroup;
 			children = (
+				F6E0F6501D0FD52F005A13E5 /* Config */,
 				B5CEFDD51D06005700E0B799 /* LoopSDK.framework */,
 				B5CEFDD61D06005700E0B799 /* Alamofire.framework */,
 				B58887111CF3A6AD00B25BCD /* LoopLocationIOS */,
@@ -96,6 +107,18 @@
 				B588871E1CF3A6AD00B25BCD /* Info.plist */,
 			);
 			path = LoopLocationIOS;
+			sourceTree = "<group>";
+		};
+		F6E0F6501D0FD52F005A13E5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */,
+				F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */,
+				F6E0F6531D0FD52F005A13E5 /* Keys.xcconfig */,
+				F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */,
+				F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +186,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E0F65A1D0FD52F005A13E5 /* Release.xcconfig in Resources */,
+				F6E0F6561D0FD52F005A13E5 /* Debug.xcconfig in Resources */,
 				B588871D1CF3A6AD00B25BCD /* LaunchScreen.storyboard in Resources */,
+				F6E0F6581D0FD52F005A13E5 /* Keys.xcconfig in Resources */,
+				F6E0F6591D0FD52F005A13E5 /* Loop Location.xcconfig in Resources */,
 				B588871A1CF3A6AD00B25BCD /* Assets.xcassets in Resources */,
 				B58887181CF3A6AD00B25BCD /* Main.storyboard in Resources */,
+				F6E0F6571D0FD52F005A13E5 /* Keys.example.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,120 +236,29 @@
 /* Begin XCBuildConfiguration section */
 		B588871F1CF3A6AD00B25BCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B58887201CF3A6AD00B25BCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		B58887221CF3A6AD00B25BCD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/LoopLocationIOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Microsoft.LoopLocation.iOS;
-				PRODUCT_NAME = "Loop Location";
 			};
 			name = Debug;
 		};
 		B58887231CF3A6AD00B25BCD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/LoopLocationIOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Microsoft.LoopLocation.iOS;
-				PRODUCT_NAME = "Loop Location";
 			};
 			name = Release;
 		};
