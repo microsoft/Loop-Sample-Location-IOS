@@ -21,7 +21,6 @@
 		B5CEFDDA1D06005700E0B799 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD61D06005700E0B799 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6E0F6561D0FD52F005A13E5 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */; };
 		F6E0F6571D0FD52F005A13E5 /* Keys.example.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */; };
-		F6E0F6581D0FD52F005A13E5 /* Keys.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6531D0FD52F005A13E5 /* Keys.xcconfig */; };
 		F6E0F6591D0FD52F005A13E5 /* Loop Location.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */; };
 		F6E0F65A1D0FD52F005A13E5 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */; };
 /* End PBXBuildFile section */
@@ -42,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B55568B51D10CC0B000174F8 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		B588870F1CF3A6AD00B25BCD /* Loop Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loop Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58887121CF3A6AD00B25BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58887171CF3A6AD00B25BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +56,6 @@
 		B5CEFDD61D06005700E0B799 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Keys.example.xcconfig; sourceTree = "<group>"; };
-		F6E0F6531D0FD52F005A13E5 /* Keys.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Loop Location.xcconfig"; sourceTree = "<group>"; };
 		F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,9 +113,9 @@
 			children = (
 				F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */,
 				F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */,
-				F6E0F6531D0FD52F005A13E5 /* Keys.xcconfig */,
 				F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */,
 				F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */,
+				B55568B51D10CC0B000174F8 /* Keys.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -189,7 +188,6 @@
 				F6E0F65A1D0FD52F005A13E5 /* Release.xcconfig in Resources */,
 				F6E0F6561D0FD52F005A13E5 /* Debug.xcconfig in Resources */,
 				B588871D1CF3A6AD00B25BCD /* LaunchScreen.storyboard in Resources */,
-				F6E0F6581D0FD52F005A13E5 /* Keys.xcconfig in Resources */,
 				F6E0F6591D0FD52F005A13E5 /* Loop Location.xcconfig in Resources */,
 				B588871A1CF3A6AD00B25BCD /* Assets.xcassets in Resources */,
 				B58887181CF3A6AD00B25BCD /* Main.storyboard in Resources */,

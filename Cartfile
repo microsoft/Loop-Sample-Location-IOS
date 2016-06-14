@@ -1,1 +1,2 @@
-git "git@github.com:Microsoft/Loop-iOS-SDK.git" ~>2.0
+github "Alamofire/Alamofire" ~> 3.0
+github "LpDevBuilder/Loop-iOS-SDK-Framework" ~>2.0
