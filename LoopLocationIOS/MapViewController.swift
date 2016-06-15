@@ -37,7 +37,7 @@ class MapViewController: UIViewController {
 		let dateFormatter = NSDateFormatter();
 		dateFormatter.dateFormat = "MM-dd HH:mm";
 		
-		annotation.coordinate = location.coordinate
+		annotation.coordinate = CLLocationCoordinate2D.init(latitude: location.latitude, longitude: location.longitude)
 		annotation.title = "Last Visit"
 		annotation.subtitle = location.visits.reduce("") { res,visit in
 			return "\(dateFormatter.stringFromDate(visit.startTime))~\(dateFormatter.stringFromDate(visit.endTime))\n\(res)";

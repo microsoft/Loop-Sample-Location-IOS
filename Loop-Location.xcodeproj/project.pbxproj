@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B55568F51D112F05000174F8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55568F31D112F05000174F8 /* Alamofire.framework */; };
+		B55568F61D112F05000174F8 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B55568F31D112F05000174F8 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B55568F71D112F05000174F8 /* LoopSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55568F41D112F05000174F8 /* LoopSDK.framework */; };
+		B55568F81D112F05000174F8 /* LoopSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B55568F41D112F05000174F8 /* LoopSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B58887131CF3A6AD00B25BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58887121CF3A6AD00B25BCD /* AppDelegate.swift */; };
 		B58887181CF3A6AD00B25BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58887161CF3A6AD00B25BCD /* Main.storyboard */; };
 		B588871A1CF3A6AD00B25BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58887191CF3A6AD00B25BCD /* Assets.xcassets */; };
@@ -15,10 +19,6 @@
 		B5CEBD531CFD051A00EC3F20 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CEBD521CFD051A00EC3F20 /* MapViewController.swift */; };
 		B5CEFDD21D05FE1600E0B799 /* logViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CEFDD11D05FE1600E0B799 /* logViewController.swift */; };
 		B5CEFDD41D05FE2E00E0B799 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CEFDD31D05FE2E00E0B799 /* TrackViewController.swift */; };
-		B5CEFDD71D06005700E0B799 /* LoopSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD51D06005700E0B799 /* LoopSDK.framework */; };
-		B5CEFDD81D06005700E0B799 /* LoopSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD51D06005700E0B799 /* LoopSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5CEFDD91D06005700E0B799 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD61D06005700E0B799 /* Alamofire.framework */; };
-		B5CEFDDA1D06005700E0B799 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5CEFDD61D06005700E0B799 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F6E0F6561D0FD52F005A13E5 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */; };
 		F6E0F6571D0FD52F005A13E5 /* Keys.example.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */; };
 		F6E0F6591D0FD52F005A13E5 /* Loop Location.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */; };
@@ -32,8 +32,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B5CEFDD81D06005700E0B799 /* LoopSDK.framework in Embed Frameworks */,
-				B5CEFDDA1D06005700E0B799 /* Alamofire.framework in Embed Frameworks */,
+				B55568F61D112F05000174F8 /* Alamofire.framework in Embed Frameworks */,
+				B55568F81D112F05000174F8 /* LoopSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		B55568B51D10CC0B000174F8 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		B55568F31D112F05000174F8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B55568F41D112F05000174F8 /* LoopSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopSDK.framework; path = Carthage/Build/iOS/LoopSDK.framework; sourceTree = "<group>"; };
 		B588870F1CF3A6AD00B25BCD /* Loop Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loop Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58887121CF3A6AD00B25BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58887171CF3A6AD00B25BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		B5CEBD521CFD051A00EC3F20 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B5CEFDD11D05FE1600E0B799 /* logViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logViewController.swift; sourceTree = "<group>"; };
 		B5CEFDD31D05FE2E00E0B799 /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
-		B5CEFDD51D06005700E0B799 /* LoopSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopSDK.framework; path = Carthage/Build/iOS/LoopSDK.framework; sourceTree = "<group>"; };
-		B5CEFDD61D06005700E0B799 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Keys.example.xcconfig; sourceTree = "<group>"; };
 		F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Loop Location.xcconfig"; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5CEFDD71D06005700E0B799 /* LoopSDK.framework in Frameworks */,
-				B5CEFDD91D06005700E0B799 /* Alamofire.framework in Frameworks */,
+				B55568F51D112F05000174F8 /* Alamofire.framework in Frameworks */,
+				B55568F71D112F05000174F8 /* LoopSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +76,9 @@
 		B58887061CF3A6AD00B25BCD = {
 			isa = PBXGroup;
 			children = (
+				B55568F31D112F05000174F8 /* Alamofire.framework */,
+				B55568F41D112F05000174F8 /* LoopSDK.framework */,
 				F6E0F6501D0FD52F005A13E5 /* Config */,
-				B5CEFDD51D06005700E0B799 /* LoopSDK.framework */,
-				B5CEFDD61D06005700E0B799 /* Alamofire.framework */,
 				B58887111CF3A6AD00B25BCD /* LoopLocationIOS */,
 				B58887101CF3A6AD00B25BCD /* Products */,
 			);
@@ -250,6 +250,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Debug;
 		};
@@ -257,6 +263,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Release;
 		};

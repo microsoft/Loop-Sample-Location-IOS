@@ -37,6 +37,6 @@ class TrackViewController: UIViewController {
 
 		if LoopSDK.locationManager.active {
 			trackSwitch.setOn(true, animated: false);
-		}
+		}		
 	}
 }

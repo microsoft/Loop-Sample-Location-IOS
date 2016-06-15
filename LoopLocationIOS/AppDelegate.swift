@@ -22,6 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener {
 		
 		if let path = NSBundle.mainBundle().pathForResource("Info", ofType: "plist"),
 			let dict = NSDictionary(contentsOfFile: path) {
+			
+			if let userId = dict["LOOP_USER_ID_PROP"] as? String,
+				let deviceId = dict["LOOP_DEVICE_ID_PROP"] as? String {
+				print(userId, deviceId)
+				LoopSDK.setUserID(userId)
+				LoopSDK.setDeviceID(deviceId)
+			}
+			
 			appID = (dict["LOOP_APP_ID_PROP"] as? String)!
 			appToken = (dict["LOOP_APP_TOKEN_PROP"] as? String)!
 		}
