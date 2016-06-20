@@ -14,7 +14,7 @@ These instructions will get you a copy of a Loop sample app for downloading user
     0. Make a copy of `Config/Keys.example.xcconfig` and call it `Config/Keys.xcconfig`
     0. In the `Keys.xcconfig` file provide values for the `LOOP_APP_ID_PROP` and `LOOP_APP_TOKEN_PROP` using your Loop app id and app token from the dashboard.
     0. Touch the `Loop Test User.xcconfig` file
-  0. Create test users in the user dashboard at the [Loop Developer Site](http://www.loop.ms)
+  0. Create test users in the user dashboard at the [Loop Developer Site](https://www.loop.ms)
   0. In the `Keys.xcconfig` file provide values for the `LOOP_USER_ID_PROP` and `LOOP_DEVICE_ID_PROP` using a test user id and device id from the dashboard.
   0. From the command line in the project directory run `carthage update --platform iOS`
   0. Build an run the app
