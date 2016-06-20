@@ -7,7 +7,7 @@
 ## Build instructions:
 These instructions will get you a copy of a Loop sample app for downloading user profiles from the Loop platform for development and testing purposes.
 
-  0. If you haven’t already, signup for a Loop account and create an app on the [Loop Developer Site](https://developer.dev.loop.ms)
+  0. If you haven’t already, signup for a Loop account and create an app on the [Loop Developer Site](https://www.loop.ms)
   0. Get the sample app
     0. Clone this sample app `git clone https://github.com/Microsoft/Loop-Sample-Location-IOS.git`
     0. Open it in XCode
