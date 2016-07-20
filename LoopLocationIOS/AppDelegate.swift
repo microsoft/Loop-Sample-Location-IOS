@@ -8,9 +8,10 @@
 
 import UIKit
 import LoopSDK
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener {
+class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener, LocationManagerListener {
 
 	var window: UIWindow?
 	
@@ -36,8 +37,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener {
 			}
 		}
 		
-		LoopSDK.initialize(self, appID: appID, token: appToken);
+		let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Sound], categories: nil)
+		UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
 		
+		LoopSDK.initialize(self, appID: appID, token: appToken);
+		LoopSDK.locationManager.addListener(self);
+
 		return true
 	}
 
@@ -74,7 +79,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener {
 		print("initialize error \(error)")
 		
 		loopInitialized = false;
+	}
+	
+	func pushNotification(message: String) {
+		let notification = UILocalNotification()
+		notification.fireDate = NSDate(timeIntervalSinceNow: 0);
+		notification.alertBody = message
+		UIApplication.sharedApplication().scheduleLocalNotification(notification)
+	}
+	
+	@objc func onLocationExit(newVisit: CLVisit, location: LoopLocation) {
+		LoopSDK.logManager.logEvent("location exit reported")
+
+		location.labels.sortInPlace { $0.score > $1.score}
 		
+		if let label = location.labels.first {
+			if (label.name == "home") {
+				pushNotification("Left Home at \(newVisit.departureDate.toLocalStringWithFormat())")
+			} else if (label.name == "work") {
+				pushNotification("Left Work at \(newVisit.departureDate.toLocalStringWithFormat())")
+			} else {
+				pushNotification("Left Unknown at \(newVisit.departureDate.toLocalStringWithFormat())")
+			}
+		}
+	}
+	
+	@objc func onLocationEnter(newVisit: CLVisit, location: LoopLocation) {
+		LoopSDK.logManager.logEvent("location enter reported")
+		
+		location.labels.sortInPlace { $0.score > $1.score}
+
+		if let label = location.labels.first {
+			if (label.name == "home") {
+				pushNotification("Entered Home at \(newVisit.arrivalDate.toLocalStringWithFormat())")
+			} else if (label.name == "work") {
+				pushNotification("Entered Work at \(newVisit.arrivalDate.toLocalStringWithFormat())")
+			}	else {
+				pushNotification("Entered Unknown at \(newVisit.arrivalDate.toLocalStringWithFormat())")
+			}
+		}
 	}
 }
 

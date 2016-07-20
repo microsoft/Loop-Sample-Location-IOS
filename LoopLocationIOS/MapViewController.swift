@@ -39,8 +39,10 @@ class MapViewController: UIViewController {
 		
 		annotation.coordinate = CLLocationCoordinate2D.init(latitude: location.latitude, longitude: location.longitude)
 		annotation.title = "Last Visit"
-		annotation.subtitle = location.visits.reduce("") { res,visit in
-			return "\(dateFormatter.stringFromDate(visit.startTime))~\(dateFormatter.stringFromDate(visit.endTime))\n\(res)";
+		
+		if let lastVisit = location.visits.last {
+			annotation.subtitle =
+				"\(dateFormatter.stringFromDate(lastVisit.startTime))~\(dateFormatter.stringFromDate(lastVisit.endTime))";
 		}
 
 		return annotation;
