@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		B505DC581D14902E008646FE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B505DC561D14902E008646FE /* Alamofire.framework */; };
 		B505DC591D14902E008646FE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B505DC561D14902E008646FE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B55969281D18CBA200895224 /* LoopSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55969271D18CBA200895224 /* LoopSDK.framework */; };
-		B55969291D18CBA200895224 /* LoopSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B55969271D18CBA200895224 /* LoopSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B58887131CF3A6AD00B25BCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58887121CF3A6AD00B25BCD /* AppDelegate.swift */; };
 		B58887181CF3A6AD00B25BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58887161CF3A6AD00B25BCD /* Main.storyboard */; };
 		B588871A1CF3A6AD00B25BCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58887191CF3A6AD00B25BCD /* Assets.xcassets */; };
@@ -33,7 +31,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B505DC591D14902E008646FE /* Alamofire.framework in Embed Frameworks */,
-				B55969291D18CBA200895224 /* LoopSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,8 +39,7 @@
 
 /* Begin PBXFileReference section */
 		B505DC561D14902E008646FE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		B55568B51D10CC0B000174F8 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
-		B55969271D18CBA200895224 /* LoopSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoopSDK.framework; path = Carthage/Build/iOS/LoopSDK.framework; sourceTree = "<group>"; };
+		B559692A1D19E42A00895224 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		B588870F1CF3A6AD00B25BCD /* Loop Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loop Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58887121CF3A6AD00B25BCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B58887171CF3A6AD00B25BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B505DC581D14902E008646FE /* Alamofire.framework in Frameworks */,
-				B55969281D18CBA200895224 /* LoopSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +71,6 @@
 		B58887061CF3A6AD00B25BCD = {
 			isa = PBXGroup;
 			children = (
-				B55969271D18CBA200895224 /* LoopSDK.framework */,
 				B505DC561D14902E008646FE /* Alamofire.framework */,
 				F6E0F6501D0FD52F005A13E5 /* Config */,
 				B58887111CF3A6AD00B25BCD /* LoopLocationIOS */,
@@ -113,9 +107,9 @@
 			children = (
 				F6E0F6511D0FD52F005A13E5 /* Debug.xcconfig */,
 				F6E0F6521D0FD52F005A13E5 /* Keys.example.xcconfig */,
+				B559692A1D19E42A00895224 /* Keys.xcconfig */,
 				F6E0F6541D0FD52F005A13E5 /* Loop Location.xcconfig */,
 				F6E0F6551D0FD52F005A13E5 /* Release.xcconfig */,
-				B55568B51D10CC0B000174F8 /* Keys.xcconfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -255,6 +249,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Debug;
@@ -268,6 +263,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Release;
