@@ -119,5 +119,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener, LoopLoca
 			}
 		}
 	}
+	
 }
 

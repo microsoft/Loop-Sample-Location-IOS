@@ -214,7 +214,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BG2-Zd-WI6">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="176" y="386" width="51" height="31"/>
+                                    <rect key="frame" x="177" y="387" width="51" height="31"/>
                                 </variation>
                                 <connections>
                                     <action selector="trackToggled:" destination="3K3-wa-cwe" eventType="valueChanged" id="GI2-pJ-njq"/>
