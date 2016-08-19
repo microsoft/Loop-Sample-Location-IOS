@@ -11,7 +11,7 @@ import LoopSDK
 import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener, LocationManagerListener {
+class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener, LoopLocationProviderListener {
 
 	var window: UIWindow?
 	
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener, Location
 		UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
 		
 		LoopSDK.initialize(self, appID: appID, token: appToken);
-		LoopSDK.locationManager.addListener(self);
+		LoopSDK.loopLocationProvider.addListener(self);
 
 		return true
 	}
@@ -119,5 +119,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, LoopSDKListener, Location
 			}
 		}
 	}
+	
 }
 
