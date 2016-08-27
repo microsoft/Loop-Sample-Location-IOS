@@ -17,6 +17,6 @@ These instructions will get you a copy of a Loop sample app for downloading user
   0. Create test users in the user dashboard at the [Loop Developer Site](https://www.loop.ms)
   0. In the `Keys.xcconfig` file provide values for the `LOOP_USER_ID_PROP` and `LOOP_DEVICE_ID_PROP` using a test user id and device id from the dashboard.
   0. From the command line in the project directory run `carthage update --platform iOS`
-  0. Build an run the app
+  0. Build and run the app
 
 After the app runs for a while you will see your user's home and work locations. This should only take a few hours but no longer than 24 hours as you move between locations.
